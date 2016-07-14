@@ -1,0 +1,88 @@
+/* Title */
+span.mdl-layout-title {
+	
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 2em;
+}
+
+/* Tabs */
+
+a.mdl-navigation__link {
+	font-size: 1.2em;
+}
+
+a.mdl-navigation__link:hover {
+	text-decoration-color: #466E47;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.page-content {
+	text-align: center;
+}
+
+.page-content h2 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	background-color: #fff;
+	font-size: xx-large;
+	padding: 3% 0 1% 0;
+	margin-bottom: 0;
+}
+
+.page-content ul {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 2em;
+	color: #000;
+	background: rgba(255,255,255, 0.4);
+	line-height: 1.7em;
+	padding: 4%;
+	list-style: none;
+}
+
+
+
+.sanFrancisco {
+	background-image: url('../img/sf_img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.austin {
+	background: url('../img/austin_img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.newYorkCity {
+	background-image: url('../img/nyc_img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.boston{
+	background-image: url('../img/boston_img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.miami {
+	background-image: url('../img/miami_img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.la {
+	background-image: url('../img/la_img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Top 10 Restaurants...</title>
+		<!-- Material Design CDN -->
+		<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-yellow.min.css" />
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300i,700|Oleo+Script+Swash+Caps:700" rel="stylesheet">
+		<!-- Angular -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Main CSS -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	</head>
+
+	<body ng-app="myApp">
+
+
+			<!-- Always shows a header, even in smaller screens. -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		  	<header class="mdl-layout__header">
+			    <div class="mdl-layout__header-row">
+			      <!-- Title -->
+			      <span class="mdl-layout-title">Top 10 Restaurants...</span>
+			      <!-- Add spacer, to align navigation to the right -->
+			      <div class="mdl-layout-spacer"></div>
+			      <!-- Navigation. We hide it in small screens. -->
+			      <nav class="mdl-navigation mdl-layout--large-screen-only">
+			        <a class="mdl-navigation__link" href="#sanFrancisco">San Francisco</a>
+			        <a class="mdl-navigation__link" href="#austin">Austin</a>
+			        <a class="mdl-navigation__link" href="#newYorkCity">New York City</a>
+			        <a class="mdl-navigation__link" href="#boston">Boston</a>
+			        <a class="mdl-navigation__link" href="#miami">Miami</a>
+			        <a class="mdl-navigation__link" href="#la">LA</a>
+			      </nav>
+			    </div>
+		 	</header>
+		  
+		    <div class="mdl-layout__drawer">
+			    <span class="mdl-layout-title">Top 10 Restaurants...</span>
+			    
+			    <nav class="mdl-navigation">
+			      	<a class="mdl-navigation__link" href="#sanFrancisco">San Francisco</a>
+			        <a class="mdl-navigation__link" href="austin">Austin</a>
+			        <a class="mdl-navigation__link" href="newYorkCity">New York City</a>
+			        <a class="mdl-navigation__link" href="boston">Boston</a>
+			        <a class="mdl-navigation__link" href="miami">Miami</a>
+			        <a class="mdl-navigation__link" href="la">LA</a>
+			    </nav>
+		    </div>
+		  
+		    <main class="mdl-layout__content">
+		    	<div class="page-content">
+
+		    		<div id="sanFrancisco" class="sanFrancisco">
+
+			      		<div class="pg_title">
+			   				<h2>...in San Francisco</h2>
+			      		</div>
+			      		
+
+			      		<div ng-controller="topSfCtrl">
+							<ul>
+								<li ng-repeat="x in sf">
+									{{ x.topNum + x.restaurant }}
+								</li>
+							</ul>								
+						</div>
+					</div>
+				
+      		
+
+				    <div id="austin" class="austin">
+						<div class="pg_title">
+						    <h2>...in Austin</h2>
+						</div>
+			      		
+			      		<div ng-controller="topAustinCtrl">
+							<ul>
+								<li ng-repeat="x in austin">
+									{{ x.topNum + x.restaurant }}
+								</li>
+							</ul>
+										
+					    </div>
+				    </div>
+			    
+
+				    <div id="newYorkCity" class="newYorkCity">
+						<div class="pg_title">
+						    <h2>...in New York City</h2>
+						</div>
+			      		
+			      		<div ng-controller="topNycCtrl">
+							<ul>
+								<li ng-repeat="x in nyc">
+									{{ x.topNum + x.restaurant }}
+								</li>
+							</ul>									
+						</div>
+					</div>
+					  			    
+
+				    <div id="boston" class="boston">
+						<div class="pg_title">
+						    <h2>...in Boston</h2>
+						</div>
+
+			      		<div ng-controller="topBostonCtrl">
+							<ul>
+								<li ng-repeat="x in boston">
+									{{ x.topNum + x.restaurant }}
+								</li>
+							</ul>
+										
+						</div>
+					</div>
+
+					   
+				    <div id="miami" class="miami">
+						<div class="pg_title">
+						    <h2>...in Miami</h2>
+				  		</div>
+
+			      		<div ng-controller="topMiamiCtrl">
+							<ul>
+								<li ng-repeat="x in miami">
+									{{ x.topNum + x.restaurant }}
+								</li>
+							</ul>
+													
+						</div>
+					</div>
+				 			    
+
+				    <div id="la" class="la">
+						<div class="pg_title">
+						    <h2>...in L.A.</h2>
+						</div>
+
+			      		<div ng-controller="topLaCtrl">
+							<ul>
+								<li ng-repeat="x in la">
+									{{ x.topNum + x.restaurant }}
+								</li>
+							</ul>
+										
+						</div>
+					</div>
+
+		    	</div>
+		    </main>
+
+		</div>
+
+
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controllers/myctrl.js"></script>
+	</body>
+
+</html>
